@@ -1,0 +1,59 @@
+////////////SASS//////////////////
+// Основные цвета
+$color-onyx: #000000; 
+$color-smoke: #333333; 
+$color-snow: #FFFFFF; 
+$color-charcoal: #111111; 
+$color-midnight: #010101; 
+
+// Фоновые цвета
+$bg-night: #000000; 
+$bg-cloud: #E0E4EB; 
+$bg-fog: #EFEFF6; 
+
+// Цвет линий
+$line-ink: #000000; 
+
+// Вспомогательные цвета
+$info-warm-sun: #FFBB00; 
+$alert-crimson: #E42215B2; 
+$alert-crimson-light: #E4221580; 
+$success-leaf: #34C759B2; 
+
+// Кнопки
+$button-alert: #FF0808; 
+$button-clean: #FFFFFF; 
+
+// Шрифт
+$font-main: 'Roboto'; 
+
+////////////CSS//////////////////
+:root {
+  /* Основные цвета */
+  --color-onyx: #000000;
+  --color-smoke: #333333;
+  --color-snow: #FFFFFF;
+  --color-charcoal: #111111;
+  --color-midnight: #010101;
+
+  /* Фоновые цвета */
+  --bg-night: #000000;
+  --bg-cloud: #E0E4EB;
+  --bg-fog: #EFEFF6;
+
+  /* Цвет линий */
+  --line-ink: #000000;
+
+  /* Вспомогательные цвета */
+  --info-warm-sun: #FFBB00;
+  --alert-crimson: #E42215B2;
+  --alert-crimson-light: #E4221580;
+  --success-leaf: #34C759B2;
+
+  /* Кнопки */
+  --button-alert: #FF0808;
+  --button-clean: #FFFFFF;
+
+  /* Шрифт */
+  --font-main: 'Roboto';
+}
