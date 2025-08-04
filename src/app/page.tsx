@@ -1,7 +1,6 @@
 import Image from "next/image";
-////
 import "@/app/assets/sharedColors/_variables.scss"
-////
+
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
         <div  style={{color: 'var(--alert-crimson-light)' }}  className="text-4xl">
           ПРОВЕРКА ЦВЕТА И ВЗАИМОДЕЙСТВИЯ С TAILWIND
         </div>
-
         <Image
           className="dark:invert"
           src="/next.svg"
