@@ -5,8 +5,8 @@ import Link from 'next/link';
 export default function Header() {
     return (
         <header
-            className="bg-white shadow-md px-6 py-4 flex items-center justify-between"
-            style={{ borderBottom: '3 px solid ', color: 'var(--line-ink)' }}
+            className=" px-6 py-4 flex items-center justify-between"
+            style={{ borderBottom: '3px solid var(--line-ink)' }}
         >
 
 

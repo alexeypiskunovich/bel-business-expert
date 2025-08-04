@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import Header from "./components/Header/Header";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "@/app/assets/sharedColors/_variables.scss";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,17 +10,46 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="relative min-h-screen"
+        style={{
+          fontFamily: "var(--font-main)",
+          backgroundColor: "var(--bg-cloud)", 
+        }}
       >
-        <Header/>
+       
+        <div className="absolute top-0 left-0 w-full -z-10">
+          <img
+            src="/backGroundMain.png"
+            alt="Background"
+            className="w-full object-cover"
+            style={{
+              minWidth: "1921px",
+              height: "auto",
+            }}
+          />
+        </div>
+
+        
+        <Header />
         {children}
       </body>
     </html>
   );
 }
+
+
+
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
